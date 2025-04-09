@@ -1,0 +1,80 @@
+/* Réinitialisation des styles par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styles pour le titre */
+header h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Contenu principal de la page */
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* Limiter la largeur de la section */
+    margin: 0 auto;
+}
+
+/* Image */
+.image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Style du bouton */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Media Queries pour les petits écrans */
+
+/* Sur les appareils mobiles (moins de 600px de large) */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em; /* Réduire la taille du titre */
+    }
+
+    .btn {
+        font-size: 1em; /* Réduire la taille du texte sur le bouton */
+        padding: 8px 16px;
+    }
+}
+
+/* Sur les tablettes (de 600px à 1024px) */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 2em; /* Ajuster la taille du titre pour les tablettes */
+    }
+
+    .content {
+        padding: 15px; /* Réduire l'espacement */
+    }
+}
